@@ -20,4 +20,4 @@ movedCube = movedCube
 //This section is how you for a shape of the "shrinkwrap" of the 2 shapes. 
 CSG hulledCubes = cube.union(movedCube).hull();
 
-return [cube,movedCube]
+return [cube,movedCube,hulledCubes.movex(size*2)]

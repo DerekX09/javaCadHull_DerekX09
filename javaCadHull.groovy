@@ -11,4 +11,7 @@ CSG movedCube =  new Sphere(size).toCSG()
 //This section is how you for a shape of the "shrinkwrap" of the 2 shapes. 
 CSG hulledCubes = cube.union(movedCube).hull();
 
+//Alternate way to perform a Hull
+hulledCubes = CSG.hullAll([cube,movedCube])
+
 return [cube,movedCube,hulledCubes.movex(size*2)]

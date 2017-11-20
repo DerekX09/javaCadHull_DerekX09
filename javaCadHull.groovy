@@ -5,8 +5,8 @@ CSG cube = new Cube(	size,// X dimention
 			size//  Z dimention
 			).toCSG()
 CSG movedCube =  new Sphere(size).toCSG()
-			.movex(20)
-			.movey(40)
+			.movex(-20)
+			.movey(-40)
 			.movez(60)
 //This section is how you for a shape of the "shrinkwrap" of the 2 shapes. 
 CSG hulledCubes = cube.union(movedCube).hull();

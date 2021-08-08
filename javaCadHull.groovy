@@ -16,6 +16,8 @@ CSG hulledCubes = cube.union(movedCube).hull();
 
 //Alternate way to perform a Hull
 hulledCubes = CSG.hullAll([cube,movedCube])
+
+//A Now make a triangle
 def points = [	new Vector3d(10, 50, 10),
 			new Vector3d(10, 40, 10),
 			new Vector3d(-10, 50, 10),
